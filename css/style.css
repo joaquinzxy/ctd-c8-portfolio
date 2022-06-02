@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+body{
+    width: 100%;
+}
+
+
+h2, h3, h4{
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: calc(1ex / 0.38);
+    margin: calc(1ex / 0.38) 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: calc(1ex / 0.37);
+    margin: calc(1ex / 0.37) 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: calc(1ex / 0.32);
+    margin: calc(1ex / 0.32) 0;
+}
+
+
+header{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 22vh;
+    justify-content: space-around;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+}
+
+header .logo-main{
+    margin: 15px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header nav ul li{
+    margin: 0 5%;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 2%;
+    letter-spacing: 0.3em;
+    border-bottom:1px dotted black;
+    padding-bottom:2px;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.presentacion{
+    display: flex;
+    flex-direction: row;
+    min-height: 78vh;
+}
+
+section.presentacion .foto-perfil{
+    padding: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.presentacion .foto-perfil img{
+    width: 100%;
+}
+
+section.presentacion .me-presento{
+    width: 60%;
+    padding: 20px 0% 20px 5%;
+}
+
+section.presentacion .me-presento h1{
+ margin-bottom: 10px;
+}
+
+section.laburo-estudio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.experiencia{
+    width: 40%;
+    height: 100vh;
+    min-width: 450px;
+}
+
+section.experiencia .laburo-card{
+    margin: 20px;
+}
+
+section.experiencia .laburo-card p{
+    margin: 0;
+}
+
+section.experiencia .laburo-card .laburo-titulo {
+    font-weight: bold;
+}
+
+section.experiencia .laburo-card .laburo-fecha{
+    color: rgb(0, 168, 235);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+section.experiencia .laburo-card .laburo-lugar{
+    color: rgb(117, 117, 117);
+}
+
+
+section.contacto form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background-color:transparent;
+    outline: none;
+}
+
+footer{
+    text-align: center;
+}
+
+footer img{
+    width: 20px;
+}
