@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: #333333;
+    transition: all 150ms ease-in-out;
 }
 
 body{
@@ -14,6 +15,12 @@ body{
 h2, h3, h4{
     text-transform: uppercase;
     letter-spacing: 0.3em;
+}
+
+h1:hover,h2:hover,h3:hover,h4:hover{
+    transition: all 150ms ease-in-out;
+    color: #00a8eb;
+    border-color: #00a8eb;
 }
 
 h1 {
@@ -45,6 +52,7 @@ p {
     font-size: 1em;
     line-height: calc(1ex / 0.32);
     margin: calc(1ex / 0.32) 0;
+    text-align: justify;
 }
 
 
@@ -87,6 +95,15 @@ a{
     letter-spacing: 0.3em;
     border-bottom:1px dotted black;
     padding-bottom:2px;
+    transition: all 150ms ease-in-out;
+}
+
+a:hover{
+    letter-spacing: 0.5em;
+    transition: all 150ms ease-in-out;
+    font-weight: bold;
+    color: #00a8eb;
+    border-color: #00a8eb;
 }
 
 main{
@@ -135,6 +152,13 @@ section.experiencia{
 
 section.experiencia .laburo-card{
     margin: 20px;
+    transition: all 350ms ease-in-out;
+
+}
+
+section.experiencia .laburo-card:hover{
+    padding-left: 20px;
+    transition: all 350ms ease-in-out;
 }
 
 section.experiencia .laburo-card p{
@@ -146,13 +170,13 @@ section.experiencia .laburo-card .laburo-titulo {
 }
 
 section.experiencia .laburo-card .laburo-fecha{
-    color: rgb(0, 168, 235);
+    color: #00a8eb;
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
 section.experiencia .laburo-card .laburo-lugar{
-    color: rgb(117, 117, 117);
+    color: #757575;
 }
 
 
@@ -172,8 +196,27 @@ input, textarea {
 
 footer{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a{
+    padding: 5px;
+    margin: 10px;
+    border-bottom: none;
 }
 
 footer img{
     width: 20px;
+    transition: all 350ms ease-in-out;
 }
+
+footer img:hover{
+    width: 25px;
+    transition: all 250ms ease-in-out;
+}
+
