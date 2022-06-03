@@ -15,10 +15,32 @@ body{
 h2, h3, h4{
     text-transform: uppercase;
     letter-spacing: 0.3em;
+    cursor: default;
 }
 
 h1:hover,h2:hover,h3:hover,h4:hover{
     transition: all 150ms ease-in-out;
+    color: #00a8eb;
+    border-color: #00a8eb;
+}
+
+section.hero h1{
+    letter-spacing: 0.2em;
+    margin-bottom: 0;
+    cursor: default;
+}
+
+section.hero h2{
+    color: #6e6e6e;
+    letter-spacing: 0.2em;
+    cursor: default;
+}
+
+
+section.hero h1:hover, section.hero h2:hover{
+    letter-spacing: 0.3em;
+    transition: all 300ms ease-in-out;
+    font-weight: bold;
     color: #00a8eb;
     border-color: #00a8eb;
 }
@@ -53,6 +75,7 @@ p {
     line-height: calc(1ex / 0.32);
     margin: calc(1ex / 0.32) 0;
     text-align: justify;
+    cursor: default;
 }
 
 
@@ -72,9 +95,15 @@ header nav{
 }
 
 header .logo-main{
+    border-bottom: none;
+}
+
+header .logo-main span{ 
     margin: 15px;
     font-size: 50px;
+    font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 header nav ul{
@@ -82,10 +111,12 @@ header nav ul{
     list-style: none;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 header nav ul li{
-    margin: 0 5%;
+    margin: 10px 5%;
+
 }
 
 a{
@@ -98,7 +129,7 @@ a{
     transition: all 150ms ease-in-out;
 }
 
-a:hover{
+section a:hover, nav a:hover, footer a:hover{
     letter-spacing: 0.5em;
     transition: all 150ms ease-in-out;
     font-weight: bold;
@@ -107,18 +138,35 @@ a:hover{
 }
 
 main{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+}
+
+section{
+    padding: 30px 5%;
+}
+
+section.hero{
+    background: linear-gradient(to top, #ffffff, #ffffff8c, #ffffff), url('/img/background.jpg') no-repeat top center;
+    background-size: cover;
+    min-height: 78vh;
+    text-align: center;
 }
 
 section.presentacion{
     display: flex;
     flex-direction: row;
     min-height: 78vh;
+    flex-wrap: wrap;
+}
+
+.boton-hero{
+    margin: 20px;
 }
 
 section.presentacion .foto-perfil{
     padding: 2%;
+    min-width: 300px;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -130,12 +178,23 @@ section.presentacion .foto-perfil img{
 }
 
 section.presentacion .me-presento{
-    width: 60%;
+    min-width: 450px;
+    width: 70%;
     padding: 20px 0% 20px 5%;
 }
 
 section.presentacion .me-presento h1{
  margin-bottom: 10px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+}
+
+section.hero .btn-container{
+    justify-content: center;
+    margin-top: 100px;
 }
 
 section.laburo-estudio{
@@ -146,6 +205,8 @@ section.laburo-estudio{
 
 section.experiencia{
     width: 40%;
+    margin: 0 5%;
+    padding: 0 2%;
     height: 100vh;
     min-width: 450px;
 }
@@ -179,10 +240,17 @@ section.experiencia .laburo-card .laburo-lugar{
     color: #757575;
 }
 
+section.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 section.contacto form{
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
 input, textarea {
