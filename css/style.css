@@ -147,7 +147,7 @@ section{
 }
 
 section.hero{
-    background: linear-gradient(to top, #ffffff, #ffffff8c, #ffffff), url('/img/background.jpg') no-repeat top center;
+    background: linear-gradient(to top, #ffffff, #ffffff8c, #ffffff), url('../img/background.jpg') no-repeat top center;
     background-size: cover;
     min-height: 78vh;
     text-align: center;
